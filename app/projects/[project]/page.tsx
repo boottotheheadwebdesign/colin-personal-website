@@ -1,3 +1,4 @@
+"use client";
 import { getProject } from "@/app/sanity/sanity-utils";
 import { PortableText } from "@portabletext/react";
 import Image from "next/image";

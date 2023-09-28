@@ -1,0 +1,31 @@
+const page = {
+  name: 'page',
+  title: 'Pages',
+  type: 'document',
+  fields: [
+    {
+      name: 'title',
+      title: 'Titles',
+      type: 'string'
+    },
+    {
+      name: 'slug',
+      title: 'Slug',
+      type: 'slug',
+      options: { 
+        source: 'title',
+        maxLength: 96 
+      }
+    },
+    {
+      name: 'content',
+      title: 'Content',
+      type: 'array',
+      of: [{ 
+        type: "block" 
+      }] // portable text 
+     }    
+  ]
+}
+
+export default page;
